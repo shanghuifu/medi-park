@@ -1,0 +1,30 @@
+.navbar {
+  height: 50px;
+  padding: 15px 25px;
+  background-color: $navy;
+  .container {
+    a {color: $white;}
+    a {text-decoration: none;}
+    line-height: 50px;
+    .title {
+      margin-left: 40px;
+      // line-height: 50px;
+      text-align: center;
+      font-size: 1.5rem;
+      float: left;
+    }
+    .right-box {
+      float: right;
+      display: flex;
+      &__favs {
+        margin-right: 20px;
+      }
+      &__post {
+        margin-right: 20px;
+      }
+      &__profile {
+        margin-right: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.navbar
+  .container
+    .title
+      = link_to root_path do
+        MediPark
+    .right-box
+      .right-box__favs
+        = link_to root_path do
+          = fa_icon "heart"
+          いいね！
+      .right-box__post
+        = link_to root_path do
+          = fa_icon "edit"
+          投稿する
+      .right-box__profile
+        = link_to root_path do
+          = fa_icon "user-circle"
+          = fa_icon "caret-down"
