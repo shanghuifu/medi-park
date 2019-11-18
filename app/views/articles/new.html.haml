@@ -1,0 +1,17 @@
+.contents
+  .box
+    .form
+      = form_for @article do |f|
+        .form__title
+          タイトル
+          %br
+          = f.text_field :title, class: 'form__title', placeholder: 'タイトルを入力してください'
+        .form__text
+          本文
+          %br
+          = f.text_field :text, class: 'form__text', placeholder: '本文を入力してください'
+        .form__image
+          画像
+          %br
+          = f.file_field :image, class: 'form__image'
+        = f.submit 'Send', class: 'submit'

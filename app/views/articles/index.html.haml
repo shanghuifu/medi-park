@@ -5,14 +5,17 @@
         .article
           .article__image
             = link_to root_path do
-              画像
+              - if article.image.present? 
+                = image_tag article.image.url
+              - else 
+                = image_tag 'no_image.jpg', size: '320x180'
           .article__texts
             .article__texts__title
               = article.title
             .article__texts__text
               = article.text
             .article__texts__more
-              = link_to root_path do
+              = link_to "/articles/#{article.id}" do
                 続きを読む
             .article__texts__info
               .article__texts__info__user

@@ -1,0 +1,26 @@
+.contents {
+  height: 100vh;
+  background-color: $light-gray;
+  .box {
+    width: 650px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-color: $white;
+    .form {
+      margin-left: 180px;
+      &__title {
+        margin-bottom: 20px;
+        width: 300px;
+      }
+      &__text {
+        margin-bottom: 20px;
+        width: 300px;
+      }
+      &__image {
+        margin-bottom: 20px;
+        width: 300px;
+      }
+    }
+  }
+}

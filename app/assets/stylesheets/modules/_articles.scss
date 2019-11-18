@@ -1,10 +1,12 @@
 .contents-container {
-  height: 150vh;
   background-color: $light-gray;
+  height: 150vh;
   .wrapper {
     .articles {
       padding: 40px 0px 40px 80px;
       width: 730px;
+      height: calc(150vh - 141px);
+      overflow: scroll;
       float: left;
       .article {
         width: 320px;
@@ -14,7 +16,7 @@
         border-radius: 2px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
         &__image {
-          line-height: 180px;
+          height: 180px;
         }
         &__texts {
           height: 120px;
