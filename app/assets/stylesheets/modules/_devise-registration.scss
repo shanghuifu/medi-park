@@ -1,0 +1,21 @@
+.sign-up {
+  height: 100vh;
+  background-color: $light-gray;
+  .box {
+    width: 650px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-color: $white;
+    .form {
+      margin-left: 180px;
+      &__title {
+        margin-bottom: 20px;
+        width: 200px;
+        border-bottom: 3px solid red;
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
