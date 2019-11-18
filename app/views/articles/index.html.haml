@@ -1,52 +1,30 @@
 .contents-container
   .wrapper
     .articles
-      .article
-        .article__image
-          = link_to root_path do
-            画像
-        .article__texts
-          .article__texts__title
-            池袋で有名な治療院
-          .article__texts__text
-            最近話題の先生の治療を受けてきました！
-          .article__texts__more
+      - @articles.each do |article|
+        .article
+          .article__image
             = link_to root_path do
-              続きを読む
-          .article__texts__info
-            .article__texts__info__user
+              画像
+          .article__texts
+            .article__texts__title
+              = article.title
+            .article__texts__text
+              = article.text
+            .article__texts__more
               = link_to root_path do
-                by test_user
-            .article__texts__info__counts
-              .article__texts__info__counts__favs
-                = fa_icon "thumbs-up"
-                1
-              .article__texts__info__counts__comments
-                = fa_icon "comment"
-                2
-      .article
-        .article__image
-          = link_to root_path do
-            画像
-        .article__texts
-          .article__texts__title
-            池袋で有名な治療院
-          .article__texts__text
-            最近話題の先生の治療を受けてきました！
-          .article__texts__more
-            = link_to root_path do
-              続きを読む
-          .article__texts__info
-            .article__texts__info__user
-              = link_to root_path do
-                by test_user
-            .article__texts__info__counts
-              .article__texts__info__counts__favs
-                = fa_icon "thumbs-up"
-                1
-              .article__texts__info__counts__comments
-                = fa_icon "comment"
-                2
+                続きを読む
+            .article__texts__info
+              .article__texts__info__user
+                = link_to root_path do
+                  by test_user
+              .article__texts__info__counts
+                .article__texts__info__counts__favs
+                  = fa_icon "thumbs-up"
+                  1
+                .article__texts__info__counts__comments
+                  = fa_icon "comment"
+                  2
     .ranking
       .ranking__header
         いいねランキング

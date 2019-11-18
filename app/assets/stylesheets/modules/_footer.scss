@@ -1,0 +1,11 @@
+.footer {
+  height: 40px;
+  padding: 10px 0px;
+  border-top: solid 1px $gray;
+  &__logo {
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: $navy;
+  }
+}

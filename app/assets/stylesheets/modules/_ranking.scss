@@ -1,0 +1,38 @@
+.ranking {
+  padding: 40px 80px 40px 40px;
+  width: 350px;
+  float: right;
+  &__header {
+    background-color: $orange;
+    color: $white;
+    text-align: center;
+  }
+  &__article {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid $gray 1px;
+    &__image {
+
+    }
+    &__texts {
+      &__title {
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+        color: $black;
+      }
+      &__info {
+        color: $gray;
+        font-size: 0.8rem;
+      }
+    }
+    &__icons{
+      &__favs {
+
+      }
+      &__comments {
+
+      }
+    }
+  }
+}

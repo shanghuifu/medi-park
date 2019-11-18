@@ -1,16 +1,18 @@
 .contents-container {
-  height: 100vh;
+  height: 150vh;
   background-color: $light-gray;
   .wrapper {
     .articles {
       padding: 40px 0px 40px 80px;
+      width: 730px;
       float: left;
       .article {
         width: 320px;
         display: inline-block;
-        margin-right: 40px;
+        margin: 0px 40px 40px 0px;
         background-color: $white;
         border-radius: 2px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
         &__image {
           line-height: 180px;
         }
@@ -54,44 +56,6 @@
                 text-align: right;
               }
             }
-          }
-        }
-      }
-    }
-    .ranking {
-      padding: 40px 80px 40px 40px;
-      width: 350px;
-      float: right;
-      &__header {
-        background-color: $orange;
-        color: $white;
-        text-align: center;
-      }
-      &__article {
-        padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: solid $gray 1px;
-        &__image {
-
-        }
-        &__texts {
-          &__title {
-            margin-bottom: 5px;
-            font-size: 1.1rem;
-            color: $black;
-          }
-          &__info {
-            color: $gray;
-            font-size: 0.8rem;
-          }
-        }
-        &__icons{
-          &__favs {
-
-          }
-          &__comments {
-
           }
         }
       }
