@@ -28,36 +28,4 @@
                 .article__texts__info__counts__comments
                   = fa_icon "comment"
                   2
-    .ranking
-      .ranking__header
-        いいねランキング
-      .ranking__article
-        .ranking__article__image
-          = fa_icon "camera"
-        .ranking__article__texts
-          .ranking__article__texts__title
-            池袋で有名な治療院
-          .ranking__article__texts__info
-            by test_user 2019年11月2日
-        .ranking__article__icons
-          .ranking__article__icons__favs
-            = fa_icon "thumbs-up"
-            5
-          .ranking__article__icons__comments
-            = fa_icon "comment"
-            2
-      .ranking__article
-        .ranking__article__image
-          = fa_icon "camera"
-        .ranking__article__texts
-          .ranking__article__texts__title
-            久しぶりのカイロに行...
-          .ranking__article__texts__info
-            by test_user 2019年11月3日
-        .ranking__article__icons
-          .ranking__article__icons__favs
-            = fa_icon "thumbs-up"
-            1
-          .ranking__article__icons__comments
-            = fa_icon "comment"
-            2
+    = render "shared/ranking"

@@ -1,0 +1,23 @@
+.contents-container
+  .wrapper
+    .article-box
+      .article
+        .article__header
+          .article__header__title
+            = @article.title
+          .article__header__date
+            = @article.created_at.strftime("%Y/%m/%d %H:%M")
+        .article__favs
+          = fa_icon "heart 2x"
+        .article__image
+          - if @article.image.present? 
+            = image_tag @article.image.url
+          - else 
+            = image_tag 'no_image.jpg', size: '320x180'
+        .article__text
+          = @article.text
+      .comment-box
+        = form_for [@article, @comment] do |f|
+          = f.text_area :text, placeholder: "コメントする", rows: "2"
+          = f.submit "SEND"
+    = render "shared/ranking"

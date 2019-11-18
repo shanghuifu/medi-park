@@ -1,0 +1,31 @@
+.contents-container {
+  background-color: $light-gray;
+  height: 150vh;
+  .wrapper {
+    .article-box {
+      width: 730px;
+      margin: 40px 0px 40px 80px;
+      background: $white;
+      float: left;
+      .article {
+        padding: 30px;
+        height: 100vh;
+        &__header {
+          margin-bottom: 40px;
+          &__title {
+            margin-bottom: 10px;
+            font-size: 2rem;
+            color: $black;
+          }
+          &__date {
+            font-size: 0.9rem;
+            color: $gray;
+          }
+        }
+        &__image {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
