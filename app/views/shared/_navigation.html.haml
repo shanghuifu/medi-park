@@ -1,5 +1,5 @@
 .navbar
-  .container
+  .nav-container
     .title
       = link_to root_path do
         MediPark
@@ -15,4 +15,8 @@
       .right-box__profile
         = link_to root_path do
           = fa_icon "user-circle"
-          = fa_icon "caret-down"
+          プロフィール
+      .right-box__log-out
+        = link_to root_path do
+          = fa_icon "sign-out"
+          ログアウト

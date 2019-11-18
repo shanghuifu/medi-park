@@ -2,15 +2,14 @@
   height: 50px;
   padding: 15px 25px;
   background-color: $navy;
-  .container {
+  .nav-container {
     a {color: $white;}
     a {text-decoration: none;}
     line-height: 50px;
     .title {
-      margin-left: 40px;
-      // line-height: 50px;
+      margin-left: 60px;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       float: left;
     }
     .right-box {
@@ -23,7 +22,10 @@
         margin-right: 20px;
       }
       &__profile {
-        margin-right: 40px;
+        margin-right: 20px;
+      }
+      &__log-out {
+        margin-right: 60px;
       }
     }
   }

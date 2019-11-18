@@ -1,0 +1,100 @@
+.contents-container {
+  height: 100vh;
+  background-color: $light-gray;
+  .wrapper {
+    .articles {
+      padding: 40px 0px 40px 80px;
+      float: left;
+      .article {
+        width: 320px;
+        display: inline-block;
+        margin-right: 40px;
+        background-color: $white;
+        border-radius: 2px;
+        &__image {
+          line-height: 180px;
+        }
+        &__texts {
+          height: 120px;
+          padding: 10px;
+          &__title {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+            color: $black;
+          }
+          &__text {
+            font-size: 0.95rem;
+            color: $gray;
+          }
+          &__more {
+            text-align: right;
+            font-size: 0.8rem;
+            a {color: $blue;}
+            a {text-decoration: none;}
+          }
+          &__info {
+            padding-top: 5px;
+            color: $gray;
+            font-size: 0.8rem;
+            border-top: solid $light-gray 1px;
+            display: flex;
+            justify-content: space-between;
+            &__user {
+              a {color: $gray;}
+              a {text-decoration: none;}
+            }
+            &__counts {
+              display: flex;
+              justify-content: flex-end;
+              &__favs {
+                text-align: right;
+                margin-right: 5px;
+              }
+              &__comments {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    .ranking {
+      padding: 40px 80px 40px 40px;
+      width: 350px;
+      float: right;
+      &__header {
+        background-color: $orange;
+        color: $white;
+        text-align: center;
+      }
+      &__article {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid $gray 1px;
+        &__image {
+
+        }
+        &__texts {
+          &__title {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+            color: $black;
+          }
+          &__info {
+            color: $gray;
+            font-size: 0.8rem;
+          }
+        }
+        &__icons{
+          &__favs {
+
+          }
+          &__comments {
+
+          }
+        }
+      }
+    }
+  }
+}

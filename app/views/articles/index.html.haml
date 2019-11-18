@@ -1,2 +1,82 @@
-.articles
-.ranking
+.contents-container
+  .wrapper
+    .articles
+      .article
+        .article__image
+          = link_to root_path do
+            画像
+        .article__texts
+          .article__texts__title
+            池袋で有名な治療院
+          .article__texts__text
+            最近話題の先生の治療を受けてきました！
+          .article__texts__more
+            = link_to root_path do
+              続きを読む
+          .article__texts__info
+            .article__texts__info__user
+              = link_to root_path do
+                by test_user
+            .article__texts__info__counts
+              .article__texts__info__counts__favs
+                = fa_icon "thumbs-up"
+                1
+              .article__texts__info__counts__comments
+                = fa_icon "comment"
+                2
+      .article
+        .article__image
+          = link_to root_path do
+            画像
+        .article__texts
+          .article__texts__title
+            池袋で有名な治療院
+          .article__texts__text
+            最近話題の先生の治療を受けてきました！
+          .article__texts__more
+            = link_to root_path do
+              続きを読む
+          .article__texts__info
+            .article__texts__info__user
+              = link_to root_path do
+                by test_user
+            .article__texts__info__counts
+              .article__texts__info__counts__favs
+                = fa_icon "thumbs-up"
+                1
+              .article__texts__info__counts__comments
+                = fa_icon "comment"
+                2
+    .ranking
+      .ranking__header
+        いいねランキング
+      .ranking__article
+        .ranking__article__image
+          = fa_icon "camera"
+        .ranking__article__texts
+          .ranking__article__texts__title
+            池袋で有名な治療院
+          .ranking__article__texts__info
+            by test_user 2019年11月2日
+        .ranking__article__icons
+          .ranking__article__icons__favs
+            = fa_icon "thumbs-up"
+            5
+          .ranking__article__icons__comments
+            = fa_icon "comment"
+            2
+      .ranking__article
+        .ranking__article__image
+          = fa_icon "camera"
+        .ranking__article__texts
+          .ranking__article__texts__title
+            久しぶりのカイロに行...
+          .ranking__article__texts__info
+            by test_user 2019年11月3日
+        .ranking__article__icons
+          .ranking__article__icons__favs
+            = fa_icon "thumbs-up"
+            1
+          .ranking__article__icons__comments
+            = fa_icon "comment"
+            2
