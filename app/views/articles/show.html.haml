@@ -7,17 +7,32 @@
             = @article.title
           .article__header__date
             = @article.created_at.strftime("%Y/%m/%d %H:%M")
-        .article__favs
-          = fa_icon "heart 2x"
+        - if current_user.already_liked?(@article)
+          .article__favd
+            = fa_icon "heart 2x"
+            = @article.likes.count
+          = button_to 'いいねを取り消す', article_like_path(@article), method: :delete
+        - else
+          .article__favs
+            = fa_icon "heart 2x"
+            = @article.likes.count
+          = button_to 'いいね', article_likes_path(@article)
         .article__image
           - if @article.image.present? 
             = image_tag @article.image.url
           - else 
             = image_tag 'no_image.jpg', size: '320x180'
         .article__text
+          %br
           = @article.text
       .comment-box
         = form_for [@article, @comment] do |f|
           = f.text_area :text, placeholder: "コメントする", rows: "2"
           = f.submit "SEND"
+      .comment-index
+        - if @comments
+          - @comments.each do |comment|
+            %p
+              = link_to comment.user.name, "/users/#{comment.user_id}"
+              = comment.text
     = render "shared/ranking"

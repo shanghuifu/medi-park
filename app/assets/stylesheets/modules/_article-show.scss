@@ -9,7 +9,9 @@
       float: left;
       .article {
         padding: 30px;
-        height: 100vh;
+        height: 90vh;
+        margin-bottom: 30px;
+        border-bottom: solid 1px $gray;
         &__header {
           margin-bottom: 40px;
           &__title {
@@ -22,8 +24,17 @@
             color: $gray;
           }
         }
+        &__favd {
+          color: red;
+        }
+        &__favs {
+          color: $black;
+        }
         &__image {
-          margin-bottom: 40px;
+          margin: 40px 0px;
+        }
+        &__text {
+
         }
       }
     }

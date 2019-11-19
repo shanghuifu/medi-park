@@ -24,8 +24,8 @@
               .article__texts__info__counts
                 .article__texts__info__counts__favs
                   = fa_icon "thumbs-up"
-                  1
+                  = article.likes.count
                 .article__texts__info__counts__comments
                   = fa_icon "comment"
-                  2
+                  = article.comments.count
     = render "shared/ranking"

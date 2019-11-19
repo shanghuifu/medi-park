@@ -3,6 +3,7 @@
   width: 350px;
   float: right;
   &__header {
+    padding: 15px 0;
     background-color: $orange;
     color: $white;
     text-align: center;
@@ -13,13 +14,15 @@
     justify-content: space-between;
     border-bottom: solid $gray 1px;
     &__image {
-
+      line-height: 50px;
+      margin-left: 15px;
     }
     &__texts {
       &__title {
         margin-bottom: 5px;
         font-size: 1.1rem;
-        color: $black;
+        a {color: $black;}
+        a {text-decoration: none;}
       }
       &__info {
         color: $gray;

@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   def index
     @articles = Article.all.order("created_at DESC")
+    @ranking = Article.all.includes(:likes).order("likes.article_id DESC").limit(10)
   end
 
   def new
@@ -18,8 +19,11 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    @ranking = Article.all.includes(:likes).order("likes.article_id DESC").limit(10)
     @article = Article.find(params[:id])
+    @comments = @article.comments.includes(:user)
     @comment = Comment.new
+    @like = Like.new
   end
 
   private
