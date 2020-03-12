@@ -58,3 +58,4 @@ gem 'mini_magick'
 gem 'pry-rails'
 gem 'devise'
 gem "nokogiri", ">= 1.10.8"
+gem "rack", ">= 2.0.8"
